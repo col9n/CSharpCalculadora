@@ -77,16 +77,18 @@ namespace CSharpCalculadora
             this.panel1.Controls.Add(this.Multiplicar);
             this.panel1.Controls.Add(this.Restar);
             this.panel1.Controls.Add(this.Decimal);
-            this.panel1.Location = new System.Drawing.Point(12, 119);
+            this.panel1.Location = new System.Drawing.Point(14, 137);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(327, 147);
+            this.panel1.Size = new System.Drawing.Size(382, 170);
             this.panel1.TabIndex = 1;
             // 
             // Reiniciar
             // 
-            this.Reiniciar.Location = new System.Drawing.Point(5, 4);
+            this.Reiniciar.Location = new System.Drawing.Point(6, 5);
+            this.Reiniciar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Reiniciar.Name = "Reiniciar";
-            this.Reiniciar.Size = new System.Drawing.Size(75, 23);
+            this.Reiniciar.Size = new System.Drawing.Size(88, 27);
             this.Reiniciar.TabIndex = 19;
             this.Reiniciar.Text = "CE";
             this.Reiniciar.UseVisualStyleBackColor = true;
@@ -94,9 +96,10 @@ namespace CSharpCalculadora
             // 
             // Borrar
             // 
-            this.Borrar.Location = new System.Drawing.Point(86, 3);
+            this.Borrar.Location = new System.Drawing.Point(102, 5);
+            this.Borrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Borrar.Name = "Borrar";
-            this.Borrar.Size = new System.Drawing.Size(75, 23);
+            this.Borrar.Size = new System.Drawing.Size(88, 27);
             this.Borrar.TabIndex = 18;
             this.Borrar.Text = "C";
             this.Borrar.UseVisualStyleBackColor = true;
@@ -104,9 +107,10 @@ namespace CSharpCalculadora
             // 
             // Quitar
             // 
-            this.Quitar.Location = new System.Drawing.Point(167, 4);
+            this.Quitar.Location = new System.Drawing.Point(195, 5);
+            this.Quitar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Quitar.Name = "Quitar";
-            this.Quitar.Size = new System.Drawing.Size(75, 23);
+            this.Quitar.Size = new System.Drawing.Size(88, 27);
             this.Quitar.TabIndex = 17;
             this.Quitar.Text = "DEL";
             this.Quitar.UseVisualStyleBackColor = true;
@@ -114,18 +118,20 @@ namespace CSharpCalculadora
             // 
             // Signo
             // 
-            this.Signo.Location = new System.Drawing.Point(5, 120);
+            this.Signo.Location = new System.Drawing.Point(6, 138);
+            this.Signo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Signo.Name = "Signo";
-            this.Signo.Size = new System.Drawing.Size(75, 23);
+            this.Signo.Size = new System.Drawing.Size(88, 27);
             this.Signo.TabIndex = 16;
             this.Signo.Text = "+/-";
             this.Signo.UseVisualStyleBackColor = true;
             // 
             // Zero
             // 
-            this.Zero.Location = new System.Drawing.Point(86, 120);
+            this.Zero.Location = new System.Drawing.Point(100, 138);
+            this.Zero.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Zero.Name = "Zero";
-            this.Zero.Size = new System.Drawing.Size(75, 23);
+            this.Zero.Size = new System.Drawing.Size(88, 27);
             this.Zero.TabIndex = 15;
             this.Zero.Text = "0";
             this.Zero.UseVisualStyleBackColor = true;
@@ -133,9 +139,10 @@ namespace CSharpCalculadora
             // 
             // Uno
             // 
-            this.Uno.Location = new System.Drawing.Point(167, 91);
+            this.Uno.Location = new System.Drawing.Point(195, 105);
+            this.Uno.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Uno.Name = "Uno";
-            this.Uno.Size = new System.Drawing.Size(75, 23);
+            this.Uno.Size = new System.Drawing.Size(88, 27);
             this.Uno.TabIndex = 14;
             this.Uno.Text = "1";
             this.Uno.UseVisualStyleBackColor = true;
@@ -143,9 +150,10 @@ namespace CSharpCalculadora
             // 
             // Dos
             // 
-            this.Dos.Location = new System.Drawing.Point(86, 91);
+            this.Dos.Location = new System.Drawing.Point(100, 105);
+            this.Dos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Dos.Name = "Dos";
-            this.Dos.Size = new System.Drawing.Size(75, 23);
+            this.Dos.Size = new System.Drawing.Size(88, 27);
             this.Dos.TabIndex = 13;
             this.Dos.Text = "2";
             this.Dos.UseVisualStyleBackColor = true;
@@ -153,9 +161,10 @@ namespace CSharpCalculadora
             // 
             // Tres
             // 
-            this.Tres.Location = new System.Drawing.Point(5, 91);
+            this.Tres.Location = new System.Drawing.Point(6, 105);
+            this.Tres.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Tres.Name = "Tres";
-            this.Tres.Size = new System.Drawing.Size(75, 23);
+            this.Tres.Size = new System.Drawing.Size(88, 27);
             this.Tres.TabIndex = 12;
             this.Tres.Text = "3";
             this.Tres.UseVisualStyleBackColor = true;
@@ -163,9 +172,10 @@ namespace CSharpCalculadora
             // 
             // Seis
             // 
-            this.Seis.Location = new System.Drawing.Point(5, 62);
+            this.Seis.Location = new System.Drawing.Point(6, 72);
+            this.Seis.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Seis.Name = "Seis";
-            this.Seis.Size = new System.Drawing.Size(75, 23);
+            this.Seis.Size = new System.Drawing.Size(88, 27);
             this.Seis.TabIndex = 8;
             this.Seis.Text = "6";
             this.Seis.UseVisualStyleBackColor = true;
@@ -173,27 +183,30 @@ namespace CSharpCalculadora
             // 
             // Operar
             // 
-            this.Operar.Location = new System.Drawing.Point(248, 120);
+            this.Operar.Location = new System.Drawing.Point(289, 138);
+            this.Operar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Operar.Name = "Operar";
-            this.Operar.Size = new System.Drawing.Size(75, 23);
+            this.Operar.Size = new System.Drawing.Size(88, 27);
             this.Operar.TabIndex = 11;
             this.Operar.Text = "=";
             this.Operar.UseVisualStyleBackColor = true;
             // 
             // Sumar
             // 
-            this.Sumar.Location = new System.Drawing.Point(248, 91);
+            this.Sumar.Location = new System.Drawing.Point(289, 105);
+            this.Sumar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Sumar.Name = "Sumar";
-            this.Sumar.Size = new System.Drawing.Size(75, 23);
+            this.Sumar.Size = new System.Drawing.Size(88, 27);
             this.Sumar.TabIndex = 7;
             this.Sumar.Text = "+";
             this.Sumar.UseVisualStyleBackColor = true;
             // 
             // Cinco
             // 
-            this.Cinco.Location = new System.Drawing.Point(86, 62);
+            this.Cinco.Location = new System.Drawing.Point(100, 72);
+            this.Cinco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Cinco.Name = "Cinco";
-            this.Cinco.Size = new System.Drawing.Size(75, 23);
+            this.Cinco.Size = new System.Drawing.Size(88, 27);
             this.Cinco.TabIndex = 9;
             this.Cinco.Text = "5";
             this.Cinco.UseVisualStyleBackColor = true;
@@ -201,9 +214,10 @@ namespace CSharpCalculadora
             // 
             // Nueve
             // 
-            this.Nueve.Location = new System.Drawing.Point(167, 33);
+            this.Nueve.Location = new System.Drawing.Point(195, 38);
+            this.Nueve.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Nueve.Name = "Nueve";
-            this.Nueve.Size = new System.Drawing.Size(75, 23);
+            this.Nueve.Size = new System.Drawing.Size(88, 27);
             this.Nueve.TabIndex = 6;
             this.Nueve.Text = "9";
             this.Nueve.UseVisualStyleBackColor = true;
@@ -211,9 +225,10 @@ namespace CSharpCalculadora
             // 
             // Cuatro
             // 
-            this.Cuatro.Location = new System.Drawing.Point(167, 62);
+            this.Cuatro.Location = new System.Drawing.Point(195, 72);
+            this.Cuatro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Cuatro.Name = "Cuatro";
-            this.Cuatro.Size = new System.Drawing.Size(75, 23);
+            this.Cuatro.Size = new System.Drawing.Size(88, 27);
             this.Cuatro.TabIndex = 10;
             this.Cuatro.Text = "4";
             this.Cuatro.UseVisualStyleBackColor = true;
@@ -221,9 +236,10 @@ namespace CSharpCalculadora
             // 
             // Ocho
             // 
-            this.Ocho.Location = new System.Drawing.Point(86, 33);
+            this.Ocho.Location = new System.Drawing.Point(100, 38);
+            this.Ocho.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Ocho.Name = "Ocho";
-            this.Ocho.Size = new System.Drawing.Size(75, 23);
+            this.Ocho.Size = new System.Drawing.Size(88, 27);
             this.Ocho.TabIndex = 5;
             this.Ocho.Text = "8";
             this.Ocho.UseVisualStyleBackColor = true;
@@ -231,9 +247,10 @@ namespace CSharpCalculadora
             // 
             // Siete
             // 
-            this.Siete.Location = new System.Drawing.Point(5, 33);
+            this.Siete.Location = new System.Drawing.Point(6, 38);
+            this.Siete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Siete.Name = "Siete";
-            this.Siete.Size = new System.Drawing.Size(75, 23);
+            this.Siete.Size = new System.Drawing.Size(88, 27);
             this.Siete.TabIndex = 4;
             this.Siete.Text = "7";
             this.Siete.UseVisualStyleBackColor = true;
@@ -241,56 +258,63 @@ namespace CSharpCalculadora
             // 
             // Dividir
             // 
-            this.Dividir.Location = new System.Drawing.Point(248, 4);
+            this.Dividir.Location = new System.Drawing.Point(289, 5);
+            this.Dividir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Dividir.Name = "Dividir";
-            this.Dividir.Size = new System.Drawing.Size(75, 23);
+            this.Dividir.Size = new System.Drawing.Size(88, 27);
             this.Dividir.TabIndex = 1;
             this.Dividir.Text = "/";
             this.Dividir.UseVisualStyleBackColor = true;
             // 
             // Multiplicar
             // 
-            this.Multiplicar.Location = new System.Drawing.Point(248, 33);
+            this.Multiplicar.Location = new System.Drawing.Point(289, 38);
+            this.Multiplicar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Multiplicar.Name = "Multiplicar";
-            this.Multiplicar.Size = new System.Drawing.Size(75, 23);
+            this.Multiplicar.Size = new System.Drawing.Size(88, 27);
             this.Multiplicar.TabIndex = 2;
             this.Multiplicar.Text = "*";
             this.Multiplicar.UseVisualStyleBackColor = true;
             // 
             // Restar
             // 
-            this.Restar.Location = new System.Drawing.Point(249, 62);
+            this.Restar.Location = new System.Drawing.Point(290, 72);
+            this.Restar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Restar.Name = "Restar";
-            this.Restar.Size = new System.Drawing.Size(75, 23);
+            this.Restar.Size = new System.Drawing.Size(88, 27);
             this.Restar.TabIndex = 3;
             this.Restar.Text = "-";
             this.Restar.UseVisualStyleBackColor = true;
             // 
             // Decimal
             // 
-            this.Decimal.Location = new System.Drawing.Point(167, 120);
+            this.Decimal.Location = new System.Drawing.Point(195, 138);
+            this.Decimal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Decimal.Name = "Decimal";
-            this.Decimal.Size = new System.Drawing.Size(75, 23);
+            this.Decimal.Size = new System.Drawing.Size(88, 27);
             this.Decimal.TabIndex = 0;
             this.Decimal.Text = ",";
             this.Decimal.UseVisualStyleBackColor = true;
+            this.Decimal.Click += new System.EventHandler(this.ButtonNumero_Click);
             // 
             // View
             // 
-            this.View.Location = new System.Drawing.Point(12, 13);
+            this.View.Location = new System.Drawing.Point(14, 15);
+            this.View.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.View.Multiline = true;
             this.View.Name = "View";
-            this.View.Size = new System.Drawing.Size(324, 100);
+            this.View.Size = new System.Drawing.Size(377, 115);
             this.View.TabIndex = 2;
             // 
-            // Calculadora
+            // CSharpCalculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 276);
+            this.ClientSize = new System.Drawing.Size(408, 318);
             this.Controls.Add(this.View);
             this.Controls.Add(this.panel1);
-            this.Name = "Calculadora";
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "CSharpCalculadora";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
