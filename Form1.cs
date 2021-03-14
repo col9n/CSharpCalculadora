@@ -27,8 +27,19 @@ namespace CSharpCalculadora
         }
         public CSharpCalculadora()
         {
-            InitializeComponent();         
+            InitializeComponent();
+            Total = "";
+            Parcial = "";
         }
+
+        /*
+         * Formats Total y Partial
+         */
+        private Boolean stringFormatOK(String valor)
+        {
+            return   (valor != null && valor.Length > 0) ;
+        }
+
         /*
          * Numeros calculadora
          */
@@ -40,6 +51,25 @@ namespace CSharpCalculadora
             Console.WriteLine(Parcial);
         }
 
+        /*
+        * +-
+        */
+        private void ButtonMasMenos_Click(object sender, EventArgs e)
+        {
+            if (stringFormatOK(Parcial))
+            {
+                double masmenos = Convert.ToDouble(Parcial);
+                if (masmenos > 0)
+                    masmenos = masmenos * -1;
+                else
+                    masmenos = Math.Abs(masmenos);
+                Parcial = masmenos.ToString();
+                SetView(Parcial);
+                ViewRestart();
+                SetView(Total+Parcial);
+                Console.WriteLine(Parcial);
+            }
+        }
 
         /*
         * DEL  CE  C
@@ -53,20 +83,45 @@ namespace CSharpCalculadora
 
         private void ButtonQuitar_Click(object sender, EventArgs e)
         {
-            if (Parcial != null && Parcial.Length > 0)
+            if (stringFormatOK(Parcial))
                 Parcial = Parcial.Remove(Parcial.Length - 1, 1);
             ViewPopLast();
             Console.WriteLine(Parcial);
         }
 
         private void ButtonReiniciar_Click(object sender, EventArgs e)
-        {
-            if (Total != null)
-                Total = "";
+        {  
+            Total = "";
+            Parcial = "";
             ViewRestart();
             Console.WriteLine(Total);
         }
 
+        /*
+         *Operations
+         */
+        private void ButtonOperation(object sender, EventArgs e)
+        {
+            List<string> operationList = new List<string>();
+            operationList.Add(",");
+            operationList.Add("+");
+            operationList.Add("-");
+            operationList.Add("*");
+            operationList.Add("/");   
+
+            string resul = (sender as Button).Text;
+            if (stringFormatOK(Parcial))
+            {
+                if (!operationList.Contains(Parcial.Substring((Parcial.Length - 1), 1)))
+                {
+                    Total = Total + Parcial + resul;
+                    Parcial = "";
+                    SetView(resul);
+                    Console.WriteLine(Parcial);
+                }
+            }
+            
+        }
 
         /*
          * View metodos
@@ -99,6 +154,8 @@ namespace CSharpCalculadora
                 }
             }
         }
+
+
     }
 
     

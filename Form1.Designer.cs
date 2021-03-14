@@ -125,6 +125,7 @@ namespace CSharpCalculadora
             this.Signo.TabIndex = 16;
             this.Signo.Text = "+/-";
             this.Signo.UseVisualStyleBackColor = true;
+            this.Signo.Click += new System.EventHandler(this.ButtonMasMenos_Click);
             // 
             // Zero
             // 
@@ -200,6 +201,7 @@ namespace CSharpCalculadora
             this.Sumar.TabIndex = 7;
             this.Sumar.Text = "+";
             this.Sumar.UseVisualStyleBackColor = true;
+            this.Sumar.Click += new System.EventHandler(this.ButtonOperation);
             // 
             // Cinco
             // 
@@ -265,6 +267,7 @@ namespace CSharpCalculadora
             this.Dividir.TabIndex = 1;
             this.Dividir.Text = "/";
             this.Dividir.UseVisualStyleBackColor = true;
+            this.Dividir.Click += new System.EventHandler(this.ButtonOperation);
             // 
             // Multiplicar
             // 
@@ -275,6 +278,7 @@ namespace CSharpCalculadora
             this.Multiplicar.TabIndex = 2;
             this.Multiplicar.Text = "*";
             this.Multiplicar.UseVisualStyleBackColor = true;
+            this.Multiplicar.Click += new System.EventHandler(this.ButtonOperation);
             // 
             // Restar
             // 
@@ -285,6 +289,7 @@ namespace CSharpCalculadora
             this.Restar.TabIndex = 3;
             this.Restar.Text = "-";
             this.Restar.UseVisualStyleBackColor = true;
+            this.Restar.Click += new System.EventHandler(this.ButtonOperation);
             // 
             // Decimal
             // 
