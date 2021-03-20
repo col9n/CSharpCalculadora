@@ -191,6 +191,7 @@ namespace CSharpCalculadora
             this.Operar.TabIndex = 11;
             this.Operar.Text = "=";
             this.Operar.UseVisualStyleBackColor = true;
+            this.Operar.Click += new System.EventHandler(this.ButtonSolve);
             // 
             // Sumar
             // 

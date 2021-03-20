@@ -123,6 +123,29 @@ namespace CSharpCalculadora
             
         }
 
+        private void ButtonSolve(object sender, EventArgs e)
+        {
+            if (stringFormatOK(Parcial))
+            {
+                Total = Total + Parcial ;
+                Parcial = "";
+                DataTable dt = new DataTable();
+                Total= Total.Replace(",", ".");
+                try { 
+                var v = dt.Compute(total, "");
+                Total = v.ToString();
+                Parcial = Total;
+                Total = "";
+                ViewRestart();
+                SetView(Parcial);
+                }
+                catch(Exception a)
+                {
+                }
+            }
+
+        }
+
         /*
          * View metodos
          */
